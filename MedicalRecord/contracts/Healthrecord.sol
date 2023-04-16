@@ -105,7 +105,7 @@ contract Healthrecord{
         @return qualification Name of degree he/she holds as a doctor
         @return add Address of his/her hospital/clinic   */
 
-     function viewDoctorById(uint _Doctorid) public view returns (uint, string memory, string memory, string memory) {
+     function viewDoctorById(uint _Doctorid) public view returns (uint id, string memory name, string memory qualification, string memory workPlace) {
         Doctor storage doctor = doctors[_Doctorid];
         return (doctor.id, doctor.name, doctor.qualification, doctor.workPlace);
     }  
@@ -117,7 +117,7 @@ contract Healthrecord{
         @return name Name of the patient
         @return disease All the diseases of the patient    */
     
-    function viewPatientByDoctor(address _PatientId) public view returns (uint, string memory, uint, string memory) {
+    function viewPatientByDoctor(address _PatientId) public view returns (uint id, string memory name, uint age, string memory disease) {
         Patient memory patients = patient[_PatientId];
         return (patients.id, patients.name, patients.age, patients.disease);
     }
@@ -131,7 +131,7 @@ contract Healthrecord{
         @return dose Dose prescribed for the medicine
         @return price Price of the medicine   */
 
-    function viewMedicine(uint _id) public view returns (string memory, uint, uint, uint) {
+    function viewMedicine(uint _id) public view returns (string memory name, uint expiryDate, uint dose, uint price) {
         MedicineDetails memory medDetails = medicines[_id];
         return (medDetails.name, medDetails.expiryDate, medDetails.dose, medDetails.price);
     }
@@ -167,7 +167,7 @@ contract Healthrecord{
         @return name Name of the patient
         @return disease All the diseases of the patient    */ 
 
-     function viewRecord() public view returns (uint, string memory, uint, string memory) {
+     function viewRecord() public view returns (uint id, string memory name, uint age, string memory disease) {
         // Doctor memory Doctors = doctors[_doctorId];
         Patient memory patients = patient[msg.sender];
         return (patients.id, patients.name, patients.age, patients.disease);
