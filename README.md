@@ -8,7 +8,6 @@ Skills used in the project and their usage in the industry are given below:
   •	Truffle - Truffle is a world-class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM)
 
 
-Problem Statement:
 
 The patient record is one of the important assets that is currently centralized, maintained, and managed by hospitals. 
 Some countries have moved to Electronic Health Record (EHR), and many countries still follow the old method to store the patient and medical details. Around 80 to 90% of the hospitals in the United States have adopted basic EHR systems, which have a lot of problems related to privacy, security, and ownership of these health records. 
