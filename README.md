@@ -2,10 +2,10 @@
 Decentralized Patient Record  Storage using Solidity in Ethereum Blockchain
 
 Skills used in the project and their usage in the industry are given below: 
-  •	Solidity – It is an object-oriented programming language that can be used to create smart contracts on a variety of blockchain systems. 
-  •	VS Code – Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control.
-  •	Ganache Blockchain - It is a tool for creating a private Ethereum blockchain on which Solidity contracts can be tested.
-  •	Truffle - Truffle is a world-class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM)
+  1. Solidity – It is an object-oriented programming language that can be used to create smart contracts on a variety of blockchain systems. 
+  2. VS Code – Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control.
+  3. Ganache Blockchain - It is a tool for creating a private Ethereum blockchain on which Solidity contracts can be tested.
+  4. Truffle - Truffle is a world-class development environment, testing framework and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM)
 
 
 
