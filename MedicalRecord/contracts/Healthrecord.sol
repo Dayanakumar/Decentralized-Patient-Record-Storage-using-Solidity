@@ -18,9 +18,9 @@ contract Healthrecord{
     }
     struct MedicineDetails {
         uint id;
-        string name;
-        uint expiryDate;
-        uint dose;
+        string medicineName;
+        string expiryDate;
+        string dose;
         uint price;
     }
     struct Prescription {
@@ -72,8 +72,8 @@ contract Healthrecord{
         @param _dose Dose prescribed to the patient
         @param _price Price of the medicine    */
 
-     function addMedicine(uint _id, string memory _name, uint _expiryDate, uint _dose, uint _price) public {
-        MedicineDetails memory newMedicine = MedicineDetails(_id, _name, _expiryDate, _dose, _price);
+     function addMedicine(uint _id, string memory _medicinename, string memory _expiryDate, string memory _dose, uint _price) public {
+        MedicineDetails memory newMedicine = MedicineDetails(_id, _medicinename, _expiryDate, _dose, _price);
         medicines[_id] = newMedicine;
     }
    
@@ -131,9 +131,9 @@ contract Healthrecord{
         @return dose Dose prescribed for the medicine
         @return price Price of the medicine   */
 
-    function viewMedicine(uint _id) public view returns (string memory name, uint expiryDate, uint dose, uint price) {
+    function viewMedicine(uint _id) public view returns (string memory medicineName, string memory expiryDate, string memory dose, uint price) {
         MedicineDetails memory medDetails = medicines[_id];
-        return (medDetails.name, medDetails.expiryDate, medDetails.dose, medDetails.price);
+        return (medDetails.medicineName, medDetails.expiryDate, medDetails.dose, medDetails.price);
     }
 
      /* View prescribed medicine to the patient 
